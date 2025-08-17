@@ -41,11 +41,11 @@ EWMA_TypeDef ewma;
 
 - Using `EwmaUpdate()`. Initialize the structure via the `EwmaInit()` function. Then, calculate the EWMA value for each point in the dataset provided.
 ```C
-if (EwmaInit(&ewma1, alpha) == 0) 
+if (EwmaInit(&ewma, alpha) == 0) 
 {
     for (size_t i = 0; i < dataSize; i++) 
     {
-        double ewmaVal = EwmaUpdate(&ewma1, data[i]);
+        double ewmaVal = EwmaUpdate(&ewma, data[i]);
 
         // Do something with the data calculated, for example:
         printf("%5.5f,\t%5.5f\n", data[i], ewmaVal);
