@@ -1,4 +1,4 @@
-# EWMA C Algorithm usage guide
+# EWMA C Algorithm
 
 This repository provides an implementation of the Exponentially Weighted Moving Average (EWMA) algorithm, useful for averaging non-periodic datasets. The general equation of this algorithm is the following:
 
