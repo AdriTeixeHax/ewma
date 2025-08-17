@@ -2,7 +2,7 @@
 
 This repository provides an implementation of the Exponentially Weighted Moving Average (EWMA) algorithm, useful for averaging non-periodic datasets. The general equation of this algorithm is the following:
 
-$$\textit{EWMA}(t) = \alpha * X(t) + (1 - \alpha) * \textit{EWMA}(t-1)$$
+$$\textit{EWMA}(t) = \alpha \cdot X(t) + (1 - \alpha) \cdot \textit{EWMA}(t-1)$$
 
 Where $\alpha$ is a smoothing factor. The program works by providing a dataset and an $\alpha$ value.
 
